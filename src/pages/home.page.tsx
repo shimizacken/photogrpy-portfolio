@@ -7,7 +7,7 @@ export const Homepage: React.FC = () => {
   return (
     <div>
       <Header />
-      <main style={{ marginTop: "1.5rem" }}>
+      <main style={{ marginTop: "6rem", height: "70vh" }}>
         <Image photo={Photos[0]} />
       </main>
     </div>
