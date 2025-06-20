@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding: 2rem;
+  font-family: 'Karla', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.2rem;
+  overscroll-behavior: contain;
+  touch-action: pan-x;
+
+  // background-image: -webkit-repeating-linear-gradient(
+  //     left,
+  //     hsla(0, 0%, 100%, 0) 0%,
+  //     hsla(0, 0%, 100%, 0) 6%,
+  //     hsla(0, 0%, 100%, 0.1) 7.5%
+  //   ),
+  //   -webkit-repeating-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 4%, hsla(
+  //           0,
+  //           0%,
+  //           0%,
+  //           0.03
+  //         )
+  //         4.5%),
+  //   -webkit-repeating-linear-gradient(left, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0) 1.2%, hsla(
+  //           0,
+  //           0%,
+  //           100%,
+  //           0.15
+  //         )
+  //         2.2%),
+  //   linear-gradient(
+  //     180deg,
+  //     hsl(0, 0%, 78%) 0%,
+  //     hsl(0, 0%, 90%) 47%,
+  //     hsl(0, 0%, 78%) 53%,
+  //     hsl(0, 0%, 70%) 100%
+  //   );
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+
+  &.header-title {
+    font-family: 'Bytesized', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+
+    &.playing {
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+video {
+  display: none;
+}

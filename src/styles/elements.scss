@@ -1,0 +1,144 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+.footer {
+  height: fit-content;
+  border-top: 1px solid #595959;
+  margin-top: 20px;
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.logger {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #595959;
+  border-radius: 8px;
+  padding: 0.8rem;
+  max-height: 5vh;
+  line-height: 1.2rem;
+  width: 88%;
+
+  .log-list {
+    overflow-y: auto;
+    width: 100%;
+  }
+
+  .log-item {
+    font-size: 0.8rem;
+  }
+}
+
+// https://codepen.io/yuhomyan/pen/jOqvjZq
+.radio-station-button {
+  width: 130px;
+  color: #262626;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: normal;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 1), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: 1px solid #ba6;
+
+  border-color: #7c7c7c;
+  background-image: -webkit-repeating-linear-gradient(
+      left,
+      hsla(0, 0%, 100%, 0) 0%,
+      hsla(0, 0%, 100%, 0) 6%,
+      hsla(0, 0%, 100%, 0.1) 7.5%
+    ),
+    -webkit-repeating-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 4%, hsla(
+            0,
+            0%,
+            0%,
+            0.03
+          )
+          4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0) 1.2%, hsla(
+            0,
+            0%,
+            100%,
+            0.15
+          )
+          2.2%),
+    linear-gradient(
+      180deg,
+      hsl(0, 0%, 78%) 0%,
+      hsl(0, 0%, 90%) 47%,
+      hsl(0, 0%, 78%) 53%,
+      hsl(0, 0%, 70%) 100%
+    );
+
+  &:active {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+}
+
+.radio-station-button-wrapper-selected {
+  .playing {
+    box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+
+  .paused {
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+  }
+}
+
+input[type='range'] {
+  transform: rotate(-90deg);
+}
+
+video {
+  width: 100%;
+  height: 0; /* or 0 if you hide it completely */
+  background: none;
+}
+
+.radio-station-button {
+  font-size: 0.8rem;
+  padding: 4px 4px;
+  width: 8rem;
+  margin: 8px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
