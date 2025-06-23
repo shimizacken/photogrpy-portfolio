@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "./Link.view";
+import { Routings } from "../routings";
 
 export const Header: React.FC = () => (
   <header
@@ -11,8 +12,10 @@ export const Header: React.FC = () => (
   >
     <h1>Zacken Photography</h1>
     <div style={{ marginLeft: "16px" }}>
-      <Link href="#">galleries</Link> | <Link href="#">blog</Link> |{" "}
-      <Link href="#">about</Link>
+      <Link href={Routings.HOME}>Home</Link> |{" "}
+      <Link href={Routings.GALLERIES}>galleries</Link> |{" "}
+      <Link href={Routings.BLOG}>blog</Link> |{" "}
+      <Link href={Routings.ABOUT}>about</Link>
     </div>
   </header>
 );

@@ -4,6 +4,9 @@ import { BlogPage } from "../pages/Blog.page";
 import { Homepage } from "../pages/home.page";
 import { BlogPostPage } from "../pages/BlogPost.page";
 import { Header } from "../components/Header.view";
+import { GalleriesPage } from "../pages/Galleries.page";
+import { GalleryPage } from "../pages/Gallery.page";
+import { Routings } from "../routings";
 
 export const RootRoutes: React.FC = () => (
   <div>
@@ -13,14 +16,14 @@ export const RootRoutes: React.FC = () => (
     <BrowserRouter>
       <Routes>
         <Route index element={<Homepage />} />
-        <Route path="about" element={<AboutPage />} />
-        <Route path="blog" element={<BlogPage />}>
+        <Route path={Routings.ABOUT} element={<AboutPage />} />
+        <Route path={Routings.BLOG} element={<BlogPage />}>
           <Route index element={<BlogPage />} />
-          <Route path=":postId" element={<BlogPostPage />} />
+          <Route path={Routings.BLOG_POST} element={<BlogPostPage />} />
         </Route>
-        <Route path="galleries" element={<BlogPage />}>
-          <Route index element={<BlogPage />} />
-          <Route path=":galleryId" element={<BlogPage />} />
+        <Route path={Routings.GALLERIES} element={<GalleriesPage />}>
+          <Route index element={<GalleriesPage />} />
+          <Route path={Routings.GALLERY} element={<GalleryPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
