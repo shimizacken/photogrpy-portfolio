@@ -1,39 +1,12 @@
-import React, { useEffect } from "react";
+import React, { use, useEffect } from "react";
 import { Link } from "./Link.view";
 import { Routings } from "../routings";
 
 import "./header.scss";
+import { useTheme } from "../hooks/useTheme";
 
 export const Header: React.FC = () => {
-  const toggleTheme = () => {
-    const body = document.body;
-    const themeToggleButton = document.getElementById("theme-toggle");
-    if (body.classList.contains("dark-theme")) {
-      body.classList.remove("dark-theme");
-      body.classList.add("light-theme");
-      if (themeToggleButton) {
-        themeToggleButton.textContent = "🌞"; // Sun icon for light theme
-      }
-    } else {
-      body.classList.remove("light-theme");
-      body.classList.add("dark-theme");
-      if (themeToggleButton) {
-        themeToggleButton.textContent = "🌜"; // Moon icon for dark theme
-      }
-    }
-  };
-
-  useEffect(() => {
-    const themeToggleButton = document.getElementById("theme-toggle");
-    if (themeToggleButton) {
-      themeToggleButton.addEventListener("click", toggleTheme);
-    }
-    return () => {
-      if (themeToggleButton) {
-        themeToggleButton.removeEventListener("click", toggleTheme);
-      }
-    };
-  }, []);
+  useTheme();
 
   return (
     <header className="header">
