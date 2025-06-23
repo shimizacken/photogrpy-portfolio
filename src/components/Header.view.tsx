@@ -8,6 +8,7 @@ export const Header: React.FC = () => (
     style={{
       display: "flex",
       alignItems: "center",
+      justifyContent: "space-between",
     }}
   >
     <h1>Zacken Photography</h1>
@@ -16,6 +17,11 @@ export const Header: React.FC = () => (
       <Link href={Routings.GALLERIES}>galleries</Link> |{" "}
       <Link href={Routings.BLOG}>blog</Link> |{" "}
       <Link href={Routings.ABOUT}>about</Link>
+    </div>
+    <div>
+      <button id="theme-toggle" className="toggle-button">
+        🌞
+      </button>
     </div>
   </header>
 );
