@@ -1,11 +1,13 @@
 import React from "react";
 
+const logo = new URL("../assets/images/IMG_4775.jpeg", import.meta.url);
+
 export const AboutPage: React.FC = () => (
   <div style={{ width: "60%", padding: "2rem", textAlign: "justify" }}>
     <h1>About</h1>
     <p>
       <img
-        src="./IMG_4775.jpeg"
+        src={logo.toString()}
         width="35%"
         style={{ float: "right", margin: "0 16px 10px" }}
       />
