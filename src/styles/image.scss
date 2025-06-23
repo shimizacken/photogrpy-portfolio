@@ -1,0 +1,15 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .image {
+    box-sizing: border-box;
+
+    &.border {
+      border: 5vw solid #fff;
+    }
+  }
+}
