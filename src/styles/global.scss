@@ -3,41 +3,13 @@ body {
   padding: 0;
   padding: 2rem;
   font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 1.2rem;
   overscroll-behavior: contain;
   touch-action: pan-x;
-
-  // background-image: -webkit-repeating-linear-gradient(
-  //     left,
-  //     hsla(0, 0%, 100%, 0) 0%,
-  //     hsla(0, 0%, 100%, 0) 6%,
-  //     hsla(0, 0%, 100%, 0.1) 7.5%
-  //   ),
-  //   -webkit-repeating-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 4%, hsla(
-  //           0,
-  //           0%,
-  //           0%,
-  //           0.03
-  //         )
-  //         4.5%),
-  //   -webkit-repeating-linear-gradient(left, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0) 1.2%, hsla(
-  //           0,
-  //           0%,
-  //           100%,
-  //           0.15
-  //         )
-  //         2.2%),
-  //   linear-gradient(
-  //     180deg,
-  //     hsl(0, 0%, 78%) 0%,
-  //     hsl(0, 0%, 90%) 47%,
-  //     hsl(0, 0%, 78%) 53%,
-  //     hsl(0, 0%, 70%) 100%
-  //   );
 }
 
 main {
@@ -48,19 +20,8 @@ main {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin: 0;
-
-  &.header-title {
-    font-family: "Bytesized", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--font-color);
-
-    &.playing {
-      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
-    }
-  }
 }
 
 h2 {

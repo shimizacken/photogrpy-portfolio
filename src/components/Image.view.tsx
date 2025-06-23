@@ -4,13 +4,13 @@ import { Photo } from "../types/photos.types";
 import "./image.scss";
 
 export const Image: React.FC<{
-  photo: Photo;
+  photo: URL; // Allow string for local images
   onClick: (elem: HTMLElement) => void;
 }> = ({ photo, onClick }) => {
   return (
     <div className="image-container">
       <img
-        src={photo.path}
+        src={photo.toString()}
         width="100%"
         className="image"
         onClick={() =>
