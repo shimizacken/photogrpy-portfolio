@@ -10,10 +10,10 @@ import { Routings } from "../routings";
 
 export const RootRoutes: React.FC = () => (
   <div>
-    <div>
-      <Header />
-    </div>
     <BrowserRouter>
+      <div>
+        <Header />
+      </div>
       <Routes>
         <Route index element={<Homepage />} />
         <Route path={Routings.ABOUT} element={<AboutPage />} />

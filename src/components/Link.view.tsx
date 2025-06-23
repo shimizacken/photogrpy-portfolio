@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 export type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string;
@@ -6,7 +7,7 @@ export type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
 };
 
 export const Link: React.FC<LinkProps> = ({ href, children, ...props }) => (
-  <a className="link" href={href} {...props}>
+  <NavLink className="link" to={href} {...props}>
     {children}
-  </a>
+  </NavLink>
 );
