@@ -8,7 +8,7 @@ export const Image: React.FC<{ photo: Photo }> = ({ photo }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: "80%",
+        width: "60%",
       }}
     >
       <img
