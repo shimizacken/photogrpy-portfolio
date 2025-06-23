@@ -9,7 +9,7 @@
     box-sizing: border-box;
 
     &.border {
-      border: 5vw solid #fff;
+      border: 5vw solid var(--font-color);
     }
   }
 }

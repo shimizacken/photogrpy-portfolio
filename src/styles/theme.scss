@@ -1,8 +1,8 @@
 .dark-background {
-  background-color: #212121;
+  background-color: var(--background-color);
 }
 
 body {
-  background-color: #212121;
-  color: #fff;
+  background-color: var(--background-color);
+  color: var(--font-color);
 }

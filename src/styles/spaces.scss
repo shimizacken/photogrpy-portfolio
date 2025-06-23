@@ -1,0 +1,26 @@
+:root {
+  --space-small: 8px;
+  --space-medium: 16px;
+  --space-large: 32px;
+}
+.space-small {
+  margin: var(--space-small);
+}
+.space-medium {
+  margin: var(--space-medium);
+}
+.space-large {
+  margin: var(--space-large);
+}
+.space-small-top {
+  margin-top: var(--space-small);
+}
+.space-medium-top {
+  margin-top: var(--space-medium);
+}
+.space-large-top {
+  margin-top: var(--space-large);
+}
+.space-small-bottom {
+  margin-bottom: var(--space-small);
+}
