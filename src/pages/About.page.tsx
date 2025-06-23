@@ -1,9 +1,14 @@
 import React from "react";
 
 export const AboutPage: React.FC = () => (
-  <div>
+  <div style={{ width: "60%", padding: "2rem", textAlign: "justify" }}>
     <h1>About</h1>
     <p>
+      <img
+        src="./IMG_4775.jpeg"
+        width="35%"
+        style={{ float: "right", margin: "0 16px 10px" }}
+      />
       Hi, I'm Shimi — a photographer, traveler, and storyteller with a passion
       for capturing the world as I see it. Whether it's a quiet moment on the
       street, a striking portrait, or the vibrant energy of a faraway place, I

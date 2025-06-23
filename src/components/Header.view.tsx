@@ -14,9 +14,9 @@ export const Header: React.FC = () => {
         <h1>Zacken Photography</h1>
         <div style={{ marginLeft: "16px" }}>
           <Link href={Routings.HOME}>Home</Link> |{" "}
-          <Link href={Routings.GALLERIES}>galleries</Link> |{" "}
-          <Link href={Routings.BLOG}>blog</Link> |{" "}
-          <Link href={Routings.ABOUT}>about</Link>
+          <Link href={Routings.GALLERIES}>Galleries</Link> |{" "}
+          <Link href={Routings.BLOG}>Blog</Link> |{" "}
+          <Link href={Routings.ABOUT}>About</Link>
         </div>
       </div>
       <div>
