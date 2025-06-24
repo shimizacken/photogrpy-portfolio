@@ -1,23 +1,28 @@
 import React, { useEffect } from "react";
 import { Photos } from "../data/photos";
 import { Image } from "../components/Image.view";
-import { useFullscreen } from "../hooks/useFullscreen";
+// import { useFullscreen } from "../hooks/useFullscreen";
+
+const slideIntervalMS = 5000;
 
 export const ImageContainer: React.FC = () => {
-  const { goFullscreen, exitFullscreen } = useFullscreen();
+  // const { goFullscreen, exitFullscreen } = useFullscreen();
 
   useEffect(() => {
     const slides = document.querySelectorAll(".slide");
-    console.log("🚀 ~ useEffect ~ slides:", slides);
-    let current = 0;
+    const Slide = { current: 0 };
 
-    setInterval(() => {
-      slides[current].classList.remove("active");
-      current = (current + 1) % slides.length;
-      slides[current].classList.add("active");
-    }, 5000);
+    const intervalId = setInterval(() => {
+      slides[Slide.current].classList.remove("active");
+      Slide.current = (Slide.current + 1) % slides.length;
+      slides[Slide.current].classList.add("active");
+    }, slideIntervalMS);
 
-    slides[current].classList.add("active");
+    slides[Slide.current].classList.add("active");
+
+    return () => {
+      clearInterval(intervalId);
+    };
   }, []);
 
   return (

@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
     <header className="header">
       <div className="title-container">
         <h1>Zacken Photography</h1>
-        <div style={{ marginLeft: "16px" }}>
+        <div style={{ marginLeft: "16px" }} className="nav-links-container">
           <Link href={Routings.HOME}>Home</Link> |{" "}
           <Link href={Routings.GALLERIES}>Galleries</Link> |{" "}
           <Link href={Routings.BLOG}>Blog</Link> |{" "}

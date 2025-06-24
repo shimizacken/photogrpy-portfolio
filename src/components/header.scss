@@ -8,9 +8,28 @@
   .title-container {
     display: flex;
     align-items: center;
-
-    a {
-      font-size: 1rem;
-    }
   }
+
+  .nav-links-container {
+    font-size: 0.9rem;
+  }
+}
+
+.toggle-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: #212121;
+}
+
+.toggle-button.active::before {
+  transform: translateX(20px);
 }
