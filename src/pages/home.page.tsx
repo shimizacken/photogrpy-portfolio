@@ -4,7 +4,7 @@ import { ImageContainer } from "../containers/Image.container";
 export const Homepage: React.FC = () => {
   return (
     <div>
-      <main style={{ marginTop: "6rem", height: "70vh" }}>
+      <main style={{ height: "95vh" }}>
         <ImageContainer />
       </main>
     </div>

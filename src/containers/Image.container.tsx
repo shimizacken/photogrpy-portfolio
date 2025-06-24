@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Photos } from "../data/photos";
 import { Image } from "../components/Image.view";
 import { useFullscreen } from "../hooks/useFullscreen";
 
-const logo = new URL(
-  "../assets/images/DSC_0247_LR4_LP-4.jpeg",
-  import.meta.url
-);
-console.log("🚀 ~ logo:", logo);
-
 export const ImageContainer: React.FC = () => {
+  const [currentImage, setCurrentImage] = useState(0);
   const { goFullscreen, exitFullscreen } = useFullscreen();
 
-  return <Image photo={logo} onClick={goFullscreen} />;
+  useEffect(() => {
+    setInterval(() => {
+      setCurrentImage((n) => n + 1);
+    }, 5000);
+  }, []);
+
+  useEffect(() => {
+    const maxLength = Photos.length;
+
+    if (currentImage === maxLength) {
+      setCurrentImage(0);
+    }
+  }, [currentImage]);
+
+  return <Image photo={Photos[currentImage]?.url} onClick={goFullscreen} />;
 };

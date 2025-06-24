@@ -1,9 +1,9 @@
-import React, { use, useEffect } from "react";
+import React from "react";
 import { Link } from "./Link.view";
 import { Routings } from "../routings";
+import { useTheme } from "../hooks/useTheme";
 
 import "./header.scss";
-import { useTheme } from "../hooks/useTheme";
 
 export const Header: React.FC = () => {
   useTheme();

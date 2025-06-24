@@ -1,22 +1,20 @@
 import React from "react";
-import { Photo } from "../types/photos.types";
 
 import "./image.scss";
 
 export const Image: React.FC<{
-  photo: URL; // Allow string for local images
+  photo: URL;
   onClick: (elem: HTMLElement) => void;
 }> = ({ photo, onClick }) => {
   return (
-    <div className="image-container">
-      <img
-        src={photo.toString()}
-        width="100%"
-        className="image"
-        onClick={() =>
-          onClick(document.querySelector(".image-container") as HTMLElement)
-        }
-      />
-    </div>
+    <div
+      className="image-container zoom-container"
+      style={{
+        backgroundImage: `url(${photo?.toString()})`,
+      }}
+      onClick={() =>
+        onClick(document.querySelector(".image-container") as HTMLElement)
+      }
+    ></div>
   );
 };

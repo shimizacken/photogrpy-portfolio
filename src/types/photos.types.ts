@@ -7,4 +7,5 @@ export type Photo = {
   alt: string;
   originalFileName: string;
   path: string;
+  url: URL;
 };
