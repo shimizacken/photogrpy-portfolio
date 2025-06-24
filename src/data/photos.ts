@@ -1,20 +1,5 @@
 import { Photo } from "../types/photos.types";
 
-const image1 = new URL(
-  "../assets/images/DSC_0587_LR4_LP.jpeg",
-  import.meta.url
-);
-
-const image2 = new URL(
-  "../assets/images/DSC_0391_LR4_LP-3.jpeg",
-  import.meta.url
-);
-
-const image3 = new URL(
-  "../assets/images/DSC_0247_LR4_LP-4.jpeg",
-  import.meta.url
-);
-
 export const Photos: Photo[] = [
   {
     id: "1",
@@ -24,7 +9,7 @@ export const Photos: Photo[] = [
     alt: "",
     originalFileName: "DSC_0391_LR4_LP-3.jpeg",
     path: "./DSC_0391_LR4_LP-3.jpeg",
-    url: image1,
+    url: new URL("../assets/images/DSC_0587_LR4_LP.jpeg", import.meta.url),
   },
   {
     id: "2",
@@ -34,7 +19,7 @@ export const Photos: Photo[] = [
     alt: "",
     originalFileName: "DSC_0247_LR4_LP-4.jpeg",
     path: "./DSC_0247_LR4_LP-4.jpeg",
-    url: image2,
+    url: new URL("../assets/images/DSC_0391_LR4_LP-3.jpeg", import.meta.url),
   },
   {
     id: "3",
@@ -44,6 +29,39 @@ export const Photos: Photo[] = [
     alt: "",
     originalFileName: "DSC_0587_LR4_LP.jpeg",
     path: "./DSC_0587_LR4_LP.jpeg",
-    url: image3,
+    url: new URL("../assets/images/DSC_0247_LR4_LP-4.jpeg", import.meta.url),
+  },
+  {
+    id: "4",
+    name: "",
+    description: "Jaipur",
+    yearTaken: 2012,
+    alt: "",
+    originalFileName: "DSC_0240_LR4_LP-2.jpeg",
+    path: "./DSC_0240_LR4_LP-2.jpeg",
+    url: new URL("../assets/images/DSC_0240_LR4_LP-2.jpeg", import.meta.url),
+  },
+  {
+    id: "5",
+    name: "",
+    description: "Jaipur",
+    yearTaken: 2012,
+    alt: "",
+    originalFileName: "DSC_0850_LR4_LP.jpeg",
+    path: "./DSC_0850_LR4_LP.jpeg",
+    url: new URL("../assets/images/DSC_0850_LR4_LP.jpeg", import.meta.url),
+  },
+  {
+    id: "6",
+    name: "",
+    description: "Jaipur",
+    yearTaken: 2012,
+    alt: "",
+    originalFileName: "DSC_0210_LR4_LP_1500-2.jpeg",
+    path: "./DSC_0210_LR4_LP_1500-2.jpeg",
+    url: new URL(
+      "../assets/images/DSC_0210_LR4_LP_1500-2.jpeg",
+      import.meta.url
+    ),
   },
 ];

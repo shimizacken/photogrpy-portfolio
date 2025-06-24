@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageContainer } from "../containers/Image.container";
+import { ImageContainer } from "../containers/PhotoGallery.container";
 
 export const Homepage: React.FC = () => {
   return (

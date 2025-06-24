@@ -1,46 +1,10 @@
-.image-container {
+.slideshow {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 75vh;
-  cursor: pointer;
-
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  animation: zoomInBg 100s ease;
-}
-
-@keyframes zoomInBg {
-  from {
-    background-size: 100%;
-  }
-  to {
-    background-size: 150%;
-  }
-}
-
-// .zoom-container {
-//   overflow: hidden;
-//   display: inline-block;
-// }
-
-// .zoom-image {
-//   transform: scale(0.8);
-//   animation: zoomIn 10s ease-in;
-// }
-
-// @keyframes zoomIn {
-//   to {
-//     transform: scale(1);
-//   }
-// }
-
-.slideshow {
-  position: relative;
-  width: 600px;
-  height: 400px;
   overflow: hidden;
 }
 
