@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 1.5rem;
+  padding-bottom: 0;
   // border: 1px solid red;
 
   .title-container {
@@ -13,13 +14,23 @@
   .nav-links-container {
     font-size: 0.9rem;
   }
+
+  .title-link {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bold;
+  }
 }
 
 .toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: var(--background-color);
   border: none;
   cursor: pointer;
   position: relative;

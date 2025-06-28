@@ -11,7 +11,13 @@ export const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="title-container">
-        <h1>Zacken Photography</h1>
+        <Link
+          href={Routings.HOME}
+          className="title-link"
+          title="Zacken Photography"
+        >
+          <h1>Zacken Photography</h1>
+        </Link>
         <div style={{ marginLeft: "16px" }} className="nav-links-container">
           <Link href={Routings.HOME}>Home</Link> |{" "}
           <Link href={Routings.GALLERIES}>Galleries</Link> |{" "}
