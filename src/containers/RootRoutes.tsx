@@ -7,6 +7,7 @@ import { Header } from "../components/Header.view";
 import { GalleriesPage } from "../pages/Galleries.page";
 import { GalleryPage } from "../pages/Gallery.page";
 import { Routings } from "../routings";
+import { Footer } from "../components/Footer.view";
 
 export const RootRoutes: React.FC = () => (
   <div>
@@ -26,6 +27,7 @@ export const RootRoutes: React.FC = () => (
           <Route path={Routings.GALLERY} element={<GalleryPage />} />
         </Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
   </div>
 );
