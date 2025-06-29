@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "./Link.view";
+
 import { Routings } from "../routings";
 import { useTheme } from "../hooks/useTheme";
+
+import { Logo } from "./Logo.view";
+import { Link } from "./Link.view";
 
 import "./header.scss";
 
@@ -16,7 +19,7 @@ export const Header: React.FC = () => {
           className="title-link"
           title="Zacken Photography"
         >
-          <h1>Zacken Photography</h1>
+          <Logo />
         </Link>
         <div style={{ marginLeft: "16px" }} className="nav-links-container">
           <Link href={Routings.HOME}>Home</Link> |{" "}

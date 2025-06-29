@@ -1,0 +1,22 @@
+.logo {
+  margin-right: 16px;
+
+  span:first-child {
+    color: red;
+  }
+
+  span:nth-child(2) {
+    color: green;
+  }
+
+  span:nth-child(3) {
+    color: blue;
+  }
+
+  span:last-child {
+    margin-top: 8px;
+    position: absolute;
+    margin-left: 2px;
+    transform: rotate(14deg);
+  }
+}
