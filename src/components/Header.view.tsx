@@ -3,6 +3,7 @@ import React from "react";
 import { Routings } from "../routings";
 import { useTheme } from "../hooks/useTheme";
 
+import { NavMenu } from "./NavMenu.view";
 import { Logo } from "./Logo.view";
 import { Link } from "./Link.view";
 
@@ -21,12 +22,7 @@ export const Header: React.FC = () => {
         >
           <Logo />
         </Link>
-        <div style={{ marginLeft: "16px" }} className="nav-links-container">
-          <Link href={Routings.HOME}>Home</Link> |{" "}
-          <Link href={Routings.GALLERIES}>Galleries</Link> |{" "}
-          <Link href={Routings.BLOG}>Blog</Link> |{" "}
-          <Link href={Routings.ABOUT}>About</Link>
-        </div>
+        <NavMenu />
       </div>
       <div>
         <button id="theme-toggle" className="toggle-button">

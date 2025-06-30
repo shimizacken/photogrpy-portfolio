@@ -117,7 +117,13 @@ video {
 }
 
 .link {
-  color: var(--font-color);
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--link-color-hover);
+  }
 }
 
 .ultra-regular {

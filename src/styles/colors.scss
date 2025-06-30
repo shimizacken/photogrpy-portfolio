@@ -1,10 +1,16 @@
 :root {
   --background-color: #ffffff;
   --font-color: #000000;
+
+  --link-color: #000000;
+  --link-color-hover: #007777;
 }
 
 .dark-theme {
   // --background-color: #212121;
   --background-color: #010409;
   --font-color: #ffffff;
+
+  --link-color: #ffffff;
+  --link-color-hover: #ffcc66;
 }

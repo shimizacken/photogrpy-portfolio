@@ -64,4 +64,14 @@ export const Photos: Photo[] = [
       import.meta.url
     ),
   },
+  {
+    id: "7",
+    name: "",
+    description: "Jaipur",
+    yearTaken: 2012,
+    alt: "",
+    originalFileName: "DSC_0928.jpeg",
+    path: "./DSC_0928.jpeg",
+    url: new URL("../assets/images/DSC_0928.jpeg", import.meta.url),
+  },
 ];
